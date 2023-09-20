@@ -2,7 +2,8 @@
 
 :root {
   --main-color: #ffb600;
-  --bg: #020202;
+  --header-bg: #020202;
+  --bg: #151515;
   --white: #fff;
 }
 
@@ -34,7 +35,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #fff;
+  background: var(--main-color);
   border-radius: 5rem;
 }
 
@@ -47,7 +48,7 @@ section {
 }
 
 header {
-  background: var(--bg);
+  background: var(--header-bg);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,4 +81,37 @@ header .navbar a:hover {
   color: var(--main-color);
   font-size: 2.5rem;
   margin-right: 7rem;
+}
+
+.home .conteudo {
+  max-width: 60rem;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(/assets/bg.svg) no-repeat;
+  background-position: center;
+  background-size: 200rem;
+}
+
+.btn {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  padding: 5px 30px;
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--main-color);
+  background: rgba(218, 165, 32, 0.5);
 }
