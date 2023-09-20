@@ -5,6 +5,7 @@
   --header-bg: #020202;
   --bg: #151515;
   --white: #fff;
+  --subtitle: #fef8e7;
 }
 
 * {
@@ -96,6 +97,13 @@ header .navbar a:hover {
   background-size: 200rem;
 }
 
+.home img {
+  position: absolute;
+  top: 45%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
 .btn {
   position: absolute;
   top: 90%;
@@ -114,4 +122,43 @@ header .navbar a:hover {
 .btn:hover {
   background-color: var(--main-color);
   background: rgba(218, 165, 32, 0.5);
+}
+
+.cabecalho {
+  text-align: center;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.cabecalho .left-img {
+  position: absolute;
+  right: 70%;
+  bottom: 70%;
+}
+
+.cabecalho .right-img {
+  position: absolute;
+  left: 70%;
+  bottom: 70%;
+}
+
+.cabecalho h3 {
+  margin-top: -2rem;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 3rem;
+  letter-spacing: 2rem;
+  color: var(--subtitle);
+}
+
+.cabecalho h3 span {
+  text-transform: lowercase;
+}
+
+.cabecalho h1 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 6rem;
+  color: var(--main-color);
+  text-transform: uppercase;
 }
