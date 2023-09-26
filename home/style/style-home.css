@@ -68,20 +68,28 @@ header .logo img {
 header .navbar a {
   margin: 0 7rem;
   font-size: 1.6rem;
-  color: #fff;
+  color: var(--white);
 }
 
 header .navbar a:hover {
-  color: var(--white);
-  border-bottom: 0.1rem solid var(--white);
+  color: var(--main-color);
+  border-bottom: 0.1rem solid var(--main-color);
   padding-bottom: 0.5rem;
 }
 
 .icons .fa-whatsapp,
 .fa-instagram {
-  color: var(--main-color);
+  color: var(--white);
   font-size: 2.5rem;
   margin-right: 7rem;
+}
+
+.icons .fa-whatsapp:hover {
+  color: var(--main-color);
+}
+
+.icons .fa-instagram:hover {
+  color: var(--main-color);
 }
 
 .home .conteudo {
@@ -161,4 +169,35 @@ header .navbar a:hover {
   font-size: 6rem;
   color: var(--main-color);
   text-transform: uppercase;
+}
+
+.display-imgs {
+  display: flex;
+  justify-content: center;
+}
+
+.display-imgs img {
+  margin: 5rem;
+  transition: transform 0.2s;
+}
+
+.display-imgs img:hover {
+  transform: scale(1.1);
+}
+
+.display-imgs button {
+  color: var(--white);
+  padding: 5px 30px;
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: 10px;
+  border: 1px solid var(--main-color);
+  background: rgba(0, 0, 0, 0);
+  transition: background-color 0.2s;
+  margin-bottom: 4rem;
+}
+
+.display-imgs button:hover {
+  transform: scale(1.1);
+  background: rgba(218, 165, 32, 0.5);
 }
